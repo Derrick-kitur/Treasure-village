@@ -23,9 +23,9 @@ header{
   padding: 33px;
   background: transparent;
 }
-body{
-  background: red;
-}
+/*body{
+  background: linear-gradient(245.59deg, #003366 0%, #006699 28.53%, #000033 75.25%);
+}*/
 .logo{
   font-size: 30px;
   font-weight: 700;
@@ -123,4 +123,40 @@ section{
 .hero-text a.i{
   vertical-align: middle;
   margin-right: 5px;
+}
+@media( max-width:1195px;
+height:auto;){
+  .header{
+    padding: 15px; 3px;
+    transition: .2s;
+  }
+  .icons{
+    padding: 0 3%;
+    transition: .2s;
+  }
+  .scroll-down{
+    right: 3%;
+    transition: .2s;
+  }
+}@media( max-width:1195px)
+{
+  section{
+    padding: 0 12%;
+    transition: .2s;
+  }
+  .hero-text{
+    padding-top: 115px;
+  }
+  .hero-img{
+    text-align: center;
+  }
+  .hero-img img{
+    width: 560px;
+    height: auto;
+  }
+  .hero{
+    height: 100px;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
 }
