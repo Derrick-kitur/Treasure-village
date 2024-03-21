@@ -94,8 +94,8 @@ section{
   line-height: 1.9;
   margin-bottom: 49px;
 }
-.blueplanet img{
-  width: 700px;
+.blueplanet img {
+  width: 300px;
   height: auto;
 }
 .hero-text a{
@@ -124,7 +124,41 @@ section{
   vertical-align: middle;
   margin-right: 5px;
 }
-@media( max-width:1195px;
+.icons{
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+}
+.icons i{
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: whitesmoke;
+  transition: all .50s ease;
+}
+.icons i:hover{
+  color: #401c93;
+  transform: translateY(-5px);
+}
+.scroll-down{
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i{
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: whitesmoke;
+  background: #2d1f8b;
+  border-radius: 30px;
+  transition: all .50s ease;
+}
+.scroll-down i:hover{
+  transform: translateY(-5px);
+}
+@media( max-width:300px;
 height:auto;){
   .header{
     padding: 15px; 3px;
@@ -138,7 +172,7 @@ height:auto;){
     right: 3%;
     transition: .2s;
   }
-}@media( max-width:1195px)
+}@media screen and( max-width:768px)
 {
   section{
     padding: 0 12%;
@@ -158,5 +192,29 @@ height:auto;){
     height: 100px;
     gap: 1rem;
     grid-template-columns: 1fr;
+  }
+  .icons{
+    display: none;
+  }
+  .scroll-down{
+    display: none;
+  }
+}
+@media( max-width:990px;){
+  #menu-icon{
+    display: block;
+  }
+  .navlist{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 40vh;
+    background: #006699;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
   }
 }
